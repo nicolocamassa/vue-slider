@@ -23,3 +23,15 @@ const slides = [
 ];
 
 console.log(slides);
+
+const { createApp } = Vue;
+
+createApp({
+    data(){
+
+    },
+    methods: {
+        
+    },
+}).mount('#app');
+
