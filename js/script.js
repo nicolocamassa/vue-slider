@@ -44,9 +44,12 @@ createApp({
             this.imagePosition = index;
         },
         imageAuto(){
-            setInterval(() => {
+            this.scroll = setInterval(() => {
                 this.autoSkip = this.nextBtn();
-            },3000)
+            },1000)
+        },
+        pauseScroll(){
+            clearInterval(this.scroll);
         }
     },
 }).mount('#app');
