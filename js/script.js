@@ -39,6 +39,9 @@ createApp({
         },
         prevBtn(){
             this.imagePosition = (this.imagePosition + this.slides.length - 1) % this.slides.length;
+        },
+        imageHigh(){
+            
         }
     },
 }).mount('#app');
