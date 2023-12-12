@@ -42,6 +42,11 @@ createApp({
         },
         imageSelect(index){
             this.imagePosition = index;
+        },
+        imageAuto(){
+            setInterval(() => {
+                this.autoSkip = this.nextBtn();
+            },3000)
         }
     },
 }).mount('#app');
