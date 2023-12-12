@@ -36,6 +36,9 @@ createApp({
     methods: {
         nextBtn(){
             this.imagePosition = (this.imagePosition + 1) % this.slides.length;
+        },
+        prevBtn(){
+            this.imagePosition = (this.imagePosition + this.slides.length - 1) % this.slides.length;
         }
     },
 }).mount('#app');
