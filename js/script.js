@@ -28,10 +28,15 @@ const { createApp } = Vue;
 
 createApp({
     data(){
-
+        return{
+            slides,
+            imagePosition: 0,
+        }
     },
     methods: {
-        
+        nextBtn(){
+            this.imagePosition = (this.imagePosition + 1) % this.slides.length;
+        }
     },
 }).mount('#app');
 
